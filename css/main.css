@@ -54,9 +54,9 @@ header nav ul li:hover{
 /*footer*/
 
 footer{
-    height: 60vh;
     width: 100%;
     background-color: #E8E9AA;
+    padding: 0% 2% 0% 2%;
 }
 
 .icono-redes{
@@ -75,6 +75,11 @@ footer{
     display: flex;
     padding: 35px 0px 50px 0px;
     align-items: center;
+    transition: 0.7s;
+}
+
+.separador-redes:hover{
+    transform: scale(1.01);
 }
 
 .contenedor-copyright{
@@ -102,18 +107,18 @@ footer{
 
 .inicio-contenedor-nosotros{
     text-align: center;
-    height: 95vh;
     width: 100%;
     background-color: #535500;
     display: flex;
     justify-content: center;
     text-align: center;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .inicio-div-nosotros{
     width: 648px;
-    height: 85%;
+    height: 660px;
     font-size: 25px;
     background-color: white;
     padding: 0 1% 0 0;
@@ -122,17 +127,30 @@ footer{
 .inicio-div-nosotros p{
     color: black;
     padding-top: 30%;
-    
 }
 
 .inicio-img-nosotros{
-    width: 648px;
-    height: 85%;
+    width: 638px;
+    background-color: white;
+    padding: 10px;
 }
 
 .inicio-img-nosotros img{
     width: 100%;
     height: 100%;
+    border-radius: 100%;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .bacground-mas-vendidos{
@@ -145,7 +163,7 @@ footer{
 .contenedor-mas-vendidos{
     text-align: center;
     background-color: white;
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-areas: "titulo titulo titulo"
@@ -165,17 +183,21 @@ footer{
 }
 
 .mas-vendidos__foto{
-    width: 400px;
-    height: 45vh;
+    width: 370px;
+    height: 400px;
     text-align: center;
-    margin: 0px;
+    margin: 3vh 0px 3vh 0px;
+}
+
+.mas-vendidos__foto:hover{
+    transform: scale(1.05);
 }
 
 .mas-vendidos__nombre{
     text-align: center;
     margin-top: 5vh;
     font-size: 25px;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
 }
 
 .mas-vendidos__titulo{
@@ -270,10 +292,13 @@ footer{
 
 /*MAIN CONTACTANOS*/
 
-.contactanos-footer{
-    height: 94.5vh;
-    width: 100%;
+.contactanos-color{
     background-color: #E8E9AA;
+    height: 100vh;
+}
+
+.contactanos-footer{
+    width: 100%;
     text-align: center;
 }
 
@@ -285,7 +310,12 @@ footer{
     display: inline-block;
     width: 300px;
     margin: 0 100px;
-    padding-top: 14%;
+    padding-top: 11%;
+    transition: 0.7s;
+}
+
+.contactanos-icono-redes:hover{
+    transform: scale(1.1);
 }
 
 .contactanos-contenedor-copyright{
@@ -294,11 +324,11 @@ footer{
         width: 100%;
     }
     
-    .contactanos-copyright{
-        text-align: center;
-    }
+.contactanos-copyright{
+    text-align: center;
+}
 
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1300px) {
 
     header{
         top: 0;
