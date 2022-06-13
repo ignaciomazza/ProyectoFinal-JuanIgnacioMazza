@@ -1,0 +1,603 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/*HEADER*/
+
+header{
+    top: 0;
+    z-index: 20;
+    position: sticky;
+    background-color: #694500;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+header div{
+    color: white;
+    flex: 30%;
+}
+
+header nav{
+    display: inline-block;
+    flex: 70%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*footer*/
+
+footer{
+    height: 60vh;
+    width: 100%;
+    background-color: #E8E9AA;
+}
+
+.icono-redes{
+    height: 18vh;
+}
+
+.nombre-redes{
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+}
+
+.separador-redes{
+    display: flex;
+    padding: 35px 0px 50px 0px;
+    align-items: center;
+}
+
+.contenedor-copyright{
+    padding-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/*MAIN INICIO*/
+
+.inicio-contenedor-img{
+    text-align: center;
+    background-image: url(../img/descuentos.jpg);
+    width: 100%;
+    height: 95vh;
+}
+
+.inicio-img-descuentos{
+    width: 70%;
+    height: 96vh;
+    object-fit: cover;
+}
+
+.inicio-contenedor-nosotros{
+    text-align: center;
+    height: 95vh;
+    width: 100%;
+    background-color: #535500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.inicio-div-nosotros{
+    width: 648px;
+    height: 85%;
+    font-size: 25px;
+    background-color: white;
+    padding: 0 1% 0 0;
+}
+
+.inicio-div-nosotros p{
+    color: black;
+    padding-top: 30%;
+    
+}
+
+.inicio-img-nosotros{
+    width: 648px;
+    height: 85%;
+}
+
+.inicio-img-nosotros img{
+    width: 100%;
+    height: 100%;
+}
+
+.bacground-mas-vendidos{
+    width: 100%;
+    height: 95vh;
+    background-image: url(../img/bg2.jpeg);
+    padding-top: 5vh;
+}
+
+.contenedor-mas-vendidos{
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+                         "seccion1 seccion2 seccion3";
+}
+
+.seccion1{
+    grid-area: seccion1;
+}
+
+.seccion2{
+    grid-area: seccion2;
+}
+
+.seccion3{
+    grid-area: seccion3;
+}
+
+.mas-vendidos__foto{
+    width: 400px;
+    height: 45vh;
+    text-align: center;
+    margin: 0px;
+}
+
+.mas-vendidos__nombre{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 25px;
+}
+
+.mas-vendidos__titulo{
+    text-align: center;
+    padding-top: 3vh;
+    grid-area: titulo;
+}
+
+.mas-vendidos__celda{
+    display: inline-block;
+}
+
+/*MAIN COLECCION*/
+
+.bg-art{
+    width: 100%;
+    height: 880px;
+    background-image: url(../img/bg2.jpeg);
+    padding-top: 90px;
+}
+
+.contenedor-art{
+    text-align: center;
+    background-color: white;
+    width: 1350px;
+    height: 700px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.img-art img{
+    width: 450px;
+    height: 450px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.img-art{
+    display: inline-block;
+    margin: 80px;
+}
+
+.info-art{
+    display: inline-block;
+    margin: 100px;
+    position: relative;
+    bottom: 110px;
+}
+
+.info-art p{
+    margin: 70px;
+    font-size: 28px;
+}
+
+.info-art a{
+    margin: 70px;
+    text-decoration: none;
+    color: black;
+    background-color: #7EC8DF;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/*MAIN INFORMACION*/
+
+
+.bg-info{
+    background-image: url(../img/bg-info.png);
+    width: 100%;
+    padding: 100px;
+}
+
+.contenedor-info{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.pregunta{
+    margin: 40px;
+    font-size: 25px;
+}
+
+.titulo-info{
+    margin: 5px;
+    font-size: 35px;
+}
+
+/*MAIN CONTACTANOS*/
+
+.contactanos-footer{
+    height: 94.5vh;
+    width: 100%;
+    background-color: #E8E9AA;
+    text-align: center;
+}
+
+.contactanos-contenedor-redes{
+    text-align: center;
+}
+
+.contactanos-icono-redes{
+    display: inline-block;
+    width: 300px;
+    margin: 0 100px;
+    padding-top: 14%;
+}
+
+.contactanos-contenedor-copyright{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+    
+    .contactanos-copyright{
+        text-align: center;
+    }
+
+@media screen and (max-width: 1520px) {
+
+    header{
+        top: 0;
+        z-index: 20;
+        position: sticky;
+        background-color: #694500;
+        padding: 1px;
+        text-align: center;
+        display: inline-block;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    header div{
+        padding: 0px 10px 10px 10px;
+        font-size: 25px;
+    }
+    
+    header nav{
+        display: inline-block;
+    }
+    
+    header nav ul{
+        display: inline-block;
+        justify-content: space-evenly;
+    }
+    
+    header nav ul li{
+        display: inline-block;
+    }
+    
+    header nav ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px 10px 20px;
+    }
+
+        /*footer*/
+
+    footer{
+        height: 300px;
+        width: 100%;
+        background-color: #E8E9AA;
+    }
+
+    .contenedor-redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icono-redes{
+        height: 140px;
+    }
+
+    .nombre-redes{
+        display: none;
+    }
+
+    .separador-redes{
+        display: flex;
+        padding: 50px 20px 50px 20px;
+        align-items: center;
+    }
+
+    .contenedor-copyright{
+        padding-top: 30px;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    
+
+    .inicio-contenedor-img{
+        text-align: center;
+        background-image: url(../img/descuentos.jpg);
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .inicio-img-descuentos{
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+
+    .bacground-mas-vendidos{
+        width: 100%;
+        height: 1600px;
+        background-image: url(../img/bg2.jpeg);
+        padding: 1vh 0vh 1vh 0vh;
+    }
+    
+    .contenedor-mas-vendidos{
+        text-align: center;
+        width: 80%;
+        height: 85vh;
+        margin: auto;
+        background-color: transparent;
+        display: grid;
+        grid-template-areas: "titulo"
+                             "seccion1"
+                             "seccion2"
+                             "seccion3";
+    }
+    
+    .seccion1{
+        grid-area: seccion1;
+    }
+    
+    .seccion2{
+        grid-area: seccion2;
+    }
+    
+    .seccion3{
+        grid-area: seccion3;
+    }
+    
+    .mas-vendidos__foto{
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .mas-vendidos__nombre{
+        text-align: center;
+        margin-top: 1vh;
+        font-size: 18px;
+    }
+    
+    .mas-vendidos__titulo{
+        text-align: center;
+        padding: 2vh 0vh 2vh 0vh;
+        grid-area: titulo;
+        height: 10vh;
+        width: 80%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+        bottom: 3vh;
+    }
+    
+    .mas-vendidos__celda{
+        display: inline-block;
+        background-color: white;
+        padding: 5% 5% 20% 5%;
+        margin: 15px 0px 15px 0px;
+    }
+
+
+
+    .inicio-contenedor-nosotros{
+        text-align: center;
+        height: 99vh;
+        width: 100%;
+        background-color: #535500;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+    }
+    
+    .inicio-div-nosotros{
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        background-color: white;
+        padding: 0 0 0 0;
+    }
+    
+    .inicio-div-nosotros p{
+        color: black;
+        padding-top: 20%;
+        
+    }
+    
+    .inicio-img-nosotros{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .inicio-img-nosotros img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*MAIN COLECCION*/
+
+    .bg-art{
+        width: 100%;
+        height: 880px;
+        background-image: url(../img/bg2.jpeg);
+        padding-top: 90px;
+    }
+
+    .contenedor-art{
+        text-align: center;
+        background-color: white;
+        width: 75%;
+        height: 680px;
+        margin: auto;
+        padding-top: 15px;
+    }
+
+    .img-art img{
+        width: 280px;
+        height: 300px;
+        margin: 0px;
+        display: inline-block;
+    }
+
+    .img-art{
+        display: inline-block;
+        margin: 1px;
+    }
+
+    .info-art{
+        display: inline-block;
+        margin: 0px;
+        position: relative;
+        bottom: 110px;
+    }
+
+    .info-art p{
+        margin: 110px 0px;
+        font-size: 25px;
+        padding: 0px 15px;
+    }
+
+    .info-art a{
+        margin: 70px;
+        text-decoration: none;
+        color: black;
+        background-color: #7EC8DF;
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /*MAIN INFORMACION*/
+
+
+    .bg-info{
+        background-image: url(../img/bg-info.png);
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .contenedor-info{
+        background-color: transparent;
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .pregunta{
+        margin: 40px;
+        font-size: 25px;
+        background-color: white;
+        opacity: .9;
+    }
+
+    .titulo-info{
+        margin: 5px;
+        font-size: 35px;
+        background-color: white;
+        opacity: .9;
+    }
+
+
+
+
+    
+    .contactanos-footer{
+        height: 95vh;
+        width: 100%;
+        background-color: #E8E9AA;
+        text-align: center;
+        padding-top: 7vh;
+    }
+    
+    .contactanos-contenedor-redes{
+        text-align: center;
+    }
+    
+    .contactanos-icono-redes{
+        display: inline-block;
+        width: 210px;
+        margin: 0;
+    }
+    
+    .contactanos-contenedor-copyright{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+    
+    .contactanos-copyright{
+        text-align: center;
+    }
+}
