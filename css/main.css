@@ -187,6 +187,7 @@ footer{
     height: 400px;
     text-align: center;
     margin: 3vh 0px 3vh 0px;
+    transition: .6s;
 }
 
 .mas-vendidos__foto:hover{
@@ -213,55 +214,7 @@ footer{
 
 /*MAIN COLECCION*/
 
-.bg-art{
-    width: 100%;
-    height: 880px;
-    background-image: url(../img/bg2.jpeg);
-    padding-top: 90px;
-}
 
-.contenedor-art{
-    text-align: center;
-    background-color: white;
-    width: 1350px;
-    height: 700px;
-    margin: auto;
-    padding-top: 50px;
-}
-
-.img-art img{
-    width: 450px;
-    height: 450px;
-    margin: 0px;
-    display: inline-block;
-}
-
-.img-art{
-    display: inline-block;
-    margin: 80px;
-}
-
-.info-art{
-    display: inline-block;
-    margin: 100px;
-    position: relative;
-    bottom: 110px;
-}
-
-.info-art p{
-    margin: 70px;
-    font-size: 28px;
-}
-
-.info-art a{
-    margin: 70px;
-    text-decoration: none;
-    color: black;
-    background-color: #7EC8DF;
-    border: 1px solid black;
-    padding: 15px;
-    font-size: 18px;
-}
 
 /*MAIN INFORMACION*/
 
@@ -524,56 +477,7 @@ footer{
 
     /*MAIN COLECCION*/
 
-    .bg-art{
-        width: 100%;
-        height: 880px;
-        background-image: url(../img/bg2.jpeg);
-        padding-top: 90px;
-    }
-
-    .contenedor-art{
-        text-align: center;
-        background-color: white;
-        width: 75%;
-        height: 680px;
-        margin: auto;
-        padding-top: 15px;
-    }
-
-    .img-art img{
-        width: 280px;
-        height: 300px;
-        margin: 0px;
-        display: inline-block;
-    }
-
-    .img-art{
-        display: inline-block;
-        margin: 1px;
-    }
-
-    .info-art{
-        display: inline-block;
-        margin: 0px;
-        position: relative;
-        bottom: 110px;
-    }
-
-    .info-art p{
-        margin: 110px 0px;
-        font-size: 25px;
-        padding: 0px 15px;
-    }
-
-    .info-art a{
-        margin: 70px;
-        text-decoration: none;
-        color: black;
-        background-color: #7EC8DF;
-        border: 1px solid black;
-        padding: 15px;
-        font-size: 18px;
-    }
+    
 
     /*MAIN INFORMACION*/
 
