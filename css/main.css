@@ -1,463 +1,143 @@
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Playfair Display', serif; }
 
-/*HEADER*/
-
-header{
-    top: 0;
-    z-index: 20;
-    position: sticky;
-    background-color: #694500;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-/*Agregando boostrap se me rompia el header asi que tuve que agregar esto en ese html*/
-.hieght-coleccion{
-    height: 51px;
-}
-
-header div{
-    color: white;
-    flex: 30%;
-}
-
-header nav{
-    display: inline-block;
-    flex: 70%;
-}
-
-header nav ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header nav ul li{
-    display: inline-block;
-    opacity: 0.5;
-    transition: 0.7s;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-header nav ul li:hover{
-    opacity: 1;
-}
-
-
-
-/*footer*/
-
-footer{
-    width: 100%;
-    background-color: white;
-    padding: 0% 2% 0% 2%;
-}
-
-.icono-redes{
-    height: 12vh;
-}
-
-.nombre-redes{
-    font-size: 30px;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center; 
-}
-
-.separador-redes{
-    display: flex;
-    padding: 35px 0px 50px 0px;
-    align-items: center;
-    transition: 0.7s;
-}
-
-.separador-redes:hover{
-    transform: scale(1.01);
-}
-
-.contenedor-copyright{
-    padding-top: 30px;
-}
-
-.copyright{
-    text-align: center;
-}
-
-/*MAIN INICIO*/
-
-.inicio-contenedor-img{
-    text-align: center;
-    background-image: url(../img/descuentos.jpg);
-    width: 100%;
-    height: 95vh;
-}
-
-.inicio-img-descuentos{
+.inicio-contenedor-img {
+  text-align: center;
+  background-image: url(../img/descuentos.jpg);
+  width: 100%;
+  height: 95vh; }
+  .inicio-contenedor-img .inicio-img-descuentos {
     width: 70%;
     height: 96vh;
-    object-fit: cover;
-}
+    object-fit: cover; }
 
-.background-contenedor-nosotros{
-    display: flex;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+.inicio-contenedor-nosotros {
+  text-align: center;
+  width: 100%;
+  background-color: #535500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh; }
+  .inicio-contenedor-nosotros .inicio-img-nosotros {
+    width: 70vh;
+    height: 70vh;
+    background-color: white;
+    padding: 10px; }
+    .inicio-contenedor-nosotros .inicio-img-nosotros img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      animation-name: girar;
+      animation-iteration-count: infinite;
+      animation-duration: 60s; }
 
-.inicio-contenedor-nosotros{
-    text-align: center;
-    width: 100%;
-    background-color: #535500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 94vh;
-    
-}
-
-.inicio-div-nosotros{
+@keyframes girar {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+  .inicio-contenedor-nosotros .inicio-div-nosotros {
     width: 70vh;
     height: 70vh;
     font-size: 25px;
     background-color: white;
-    padding: 0 1% 0 0;
-}
+    padding: 0 1% 0 0; }
+    .inicio-contenedor-nosotros .inicio-div-nosotros p {
+      color: black;
+      padding-top: 30%; }
 
-.inicio-div-nosotros p{
-    color: black;
-    padding-top: 30%;
-}
-
-.inicio-img-nosotros{
-    width: 70vh;
-    height: 70vh;
-    background-color: white;
-    padding: 10px;
-}
-
-.inicio-img-nosotros img{
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    animation-name: girar;
-    animation-iteration-count: infinite;
-    animation-duration: 60s;
-}
-
-@keyframes girar{
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-.bacground-mas-vendidos{
-    width: 100%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-.contenedor-mas-vendidos{
+.bacground-mas-vendidos {
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
+  .bacground-mas-vendidos .contenedor-mas-vendidos {
     text-align: center;
     background-image: url(../img/bg2.jpeg);
     width: 85%;
     margin: auto;
     display: grid;
-    grid-template-areas: "titulo titulo titulo"
-                         "seccion1 seccion2 seccion3";
-    box-shadow: 0px 0px 15px rgb(101, 101, 101);
-}
+    grid-template-areas: "titulo titulo titulo" "seccion1 seccion2 seccion3";
+    box-shadow: 0px 0px 15px #656565; }
+    .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__titulo {
+      text-align: center;
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+      grid-area: titulo; }
+    .bacground-mas-vendidos .contenedor-mas-vendidos .seccion1 {
+      grid-area: seccion1; }
+    .bacground-mas-vendidos .contenedor-mas-vendidos .seccion2 {
+      grid-area: seccion2; }
+    .bacground-mas-vendidos .contenedor-mas-vendidos .seccion3 {
+      grid-area: seccion3; }
+    .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda {
+      display: inline-block; }
+      .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda .mas-vendidos__foto {
+        width: 370px;
+        height: 400px;
+        text-align: center;
+        margin: 3vh 0px 3vh 0px;
+        transition: .6s;
+        box-shadow: 0px 0px 15px #656565; }
+      .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda .mas-vendidos__foto:hover {
+        transform: scale(1.05); }
+      .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda .mas-vendidos__nombre {
+        text-align: center;
+        margin-top: 5vh;
+        font-size: 25px;
+        padding-bottom: 5vh; }
 
-.seccion1{
-    grid-area: seccion1;
-}
-
-.seccion2{
-    grid-area: seccion2;
-}
-
-.seccion3{
-    grid-area: seccion3;
-}
-
-.mas-vendidos__foto{
-    width: 370px;
-    height: 400px;
-    text-align: center;
-    margin: 3vh 0px 3vh 0px;
-    transition: .6s;
-    box-shadow: 0px 0px 15px rgb(101, 101, 101);
-}
-
-.mas-vendidos__foto:hover{
-    transform: scale(1.05);
-}
-
-.mas-vendidos__nombre{
-    text-align: center;
-    margin-top: 5vh;
-    font-size: 25px;
-    padding-bottom: 5vh;
-}
-
-.mas-vendidos__titulo{
-    text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    grid-area: titulo;
-}
-
-.mas-vendidos__celda{
-    display: inline-block;
-}
-
-/*MAIN COLECCION*/
-
-
-
-/*MAIN INFORMACION*/
-
-.brown{
-    background-color: #694500;
-    border: none;
-    transition: .5s;
-}
-
-.brown:hover{
-    background-color: #4a3000;
-    border: none;
-}
-
-.brown:focus{
-    background-color: #694500;
-    border: none;
-}
-
-.card{
-    transition: 0.5s;
-    box-shadow: 0px 0px 5px rgb(151, 151, 151);
-}
-
-.card:hover{
-    transform: scale(1.02);
-}
-
-.bg-info{
-    background-image: url(../img/bg-info.png);
-    width: 100%;
-    padding: 100px;
-}
-
-.contenedor-info{
-    background-color: white;
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-}
-
-.pregunta{
-    margin: 40px;
-    font-size: 25px;
-}
-
-.titulo-info{
-    margin: 5px;
-    font-size: 35px;
-}
-
-/*MAIN CONTACTANOS*/
-
-.contactanos-color{
-    background-color: #E8E9AA;
-    height: 100vh;
-}
-
-.contactanos-footer{
-    width: 100%;
-    text-align: center;
-}
-
-.contactanos-contenedor-redes{
-    text-align: center;
-}
-
-.contactanos-icono-redes{
-    display: inline-block;
-    width: 300px;
-    margin: 0 100px;
-    padding-top: 11%;
-    transition: 0.7s;
-}
-
-.contactanos-icono-redes:hover{
-    transform: scale(1.1);
-}
-
-.contactanos-contenedor-copyright{
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-    }
-    
-.contactanos-copyright{
-    text-align: center;
-}
+footer {
+  width: 100%;
+  background-color: white;
+  padding: 0% 2% 0% 2%; }
+  footer .separador-redes {
+    display: flex;
+    padding: 35px 0px 50px 0px;
+    align-items: center;
+    transition: 0.7s; }
+    footer .separador-redes .icono-redes {
+      height: 12vh; }
+    footer .separador-redes .nombre-redes {
+      font-size: 30px;
+      width: 200px;
+      height: 100px;
+      display: flex;
+      align-items: center; }
+  footer .separador-redes:hover {
+    transform: scale(1.01); }
+  footer .contenedor-copyright {
+    padding-top: 30px; }
+    footer .contenedor-copyright .copyright {
+      text-align: center; }
 
 @media screen and (max-width: 1300px) {
-
-    header{
-        top: 0;
-        z-index: 20;
-        position: sticky;
-        background-color: #694500;
-        padding: 1px;
-        text-align: center;
-        display: inline-block;
-        justify-content: space-evenly;
-        width: 100%;
-        padding: 5px;
-    }
-
-    /*Agregando boostrap se me rompia el header asi que tuve que agregar esto en ese html*/
-    .hieght-coleccion{
-        height: 80px;
-    }   
-    
-    header div{
-        padding: 0px 10px 10px 10px;
-    }
-    
-    header nav{
-        display: inline-block;
-    }
-    
-    header nav ul{
-        display: inline-block;
-        justify-content: space-evenly;
-    }
-    
-    header nav ul li{
-        display: inline-block;
-    }
-    
-    header nav ul li a{
-        text-decoration: none;
-        color: white;
-        padding: 10px 20px 10px 20px;
-    }
-
-        /*footer*/
-
-    footer{
-        height: 9vh;
-        width: 100%;
-        background-color: white;
-    }
-
-    .contenedor-redes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .icono-redes{
-        height: 140px;
-    }
-
-    .nombre-redes{
-        display: none;
-    }
-
-    .separador-redes{
-        display: flex;
-        padding: 50px 20px 50px 20px;
-        align-items: center;
-    }
-
-    .contenedor-copyright{
-        padding-top: 30px;
-    }
-
-    .copyright{
-        text-align: center;
-    }
-
-    
-
-    .inicio-contenedor-img{
-        text-align: center;
-        background-image: url(../img/descuentos.jpg);
-        width: 100%;
-        height: 90vh;
-    }
-    
-    .inicio-img-descuentos{
-        width: 100%;
-        height: 90vh;
-        object-fit: cover;
-    }
-
-    .bacground-mas-vendidos{
-        width: 100%;
-        background-color: white;
-        padding: 1vh 0vh 1vh 0vh;
-    }
-    
-    .contenedor-mas-vendidos{
-        text-align: center;
-        width: 80%;
-        margin: auto;
-        background-color: white;
-        display: grid;
-        grid-template-areas: "titulo"
-                             "seccion1"
-                             "seccion2"
-                             "seccion3";
-    }
-    
-    .seccion1{
-        grid-area: seccion1;
-    }
-    
-    .seccion2{
-        grid-area: seccion2;
-    }
-    
-    .seccion3{
-        grid-area: seccion3;
-    }
-    
-    .mas-vendidos__foto{
-        width: 250px;
-        height: 300px;
-        text-align: center;
-        margin: 0px;
-    }
-    
-    .mas-vendidos__nombre{
-        text-align: center;
-        margin-top: 1vh;
-        font-size: 18px;
-    }
-    
-    .mas-vendidos__titulo{
-        text-align: center;
+  .inicio-contenedor-img {
+    height: 90vh; }
+    .inicio-contenedor-img .inicio-img-descuentos {
+      width: 100%;
+      height: 90vh; }
+  .inicio-contenedor-nosotros {
+    flex-direction: column;
+    height: 110vh; }
+    .inicio-contenedor-nosotros .inicio-img-nosotros {
+      width: 300px;
+      height: 300px; }
+    .inicio-contenedor-nosotros .inicio-div-nosotros {
+      width: 300px;
+      height: 350px;
+      font-size: 20px; }
+  .bacground-mas-vendidos {
+    background-color: white;
+    padding: 1vh 0vh 1vh 0vh; }
+    .bacground-mas-vendidos .contenedor-mas-vendidos {
+      width: 80%;
+      background-color: white;
+      grid-template-areas: "titulo" "seccion1" "seccion2" "seccion3"; }
+      .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__titulo {
         padding: 2vh 0vh 2vh 0vh;
         grid-area: titulo;
         height: 10vh;
@@ -468,116 +148,27 @@ footer{
         align-items: center;
         margin: auto;
         position: relative;
-        bottom: 3vh;
-    }
-    
-    .mas-vendidos__celda{
-        display: inline-block;
+        bottom: 3vh; }
+      .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda {
         background-color: white;
         padding: 5% 5% 20% 5%;
-        margin: 15px 0px 15px 0px;
-    }
-
-
-
-    .inicio-contenedor-nosotros{
-        text-align: center;
-        width: 100%;
-        background-color: #535500;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 110vh;
-    }
-    
-    .inicio-div-nosotros{
-        width: 300px;
-        height: 350px;
-        font-size: 20px;
-        background-color: white;
-    }
-    
-    .inicio-div-nosotros p{
-        color: black;
-        padding-top: 20%;
-    }
-    
-    .inicio-img-nosotros{
-        width: 300px;
-        height: 300px;
-    }
-    
-    .inicio-img-nosotros img{
-        width: 100%;
-        height: 100%;
-    }
-
-
-    /*MAIN COLECCION*/
-
-    
-
-    /*MAIN INFORMACION*/
-
-
-    .bg-info{
-        background-image: url(../img/bg-info.png);
-        width: 100%;
-        padding: 0px 0px;
-    }
-
-    .contenedor-info{
-        background-color: transparent;
-        width: 100%;
-        margin: auto;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .pregunta{
-        margin: 40px;
-        font-size: 25px;
-        background-color: white;
-        opacity: .9;
-    }
-
-    .titulo-info{
-        margin: 5px;
-        font-size: 35px;
-        background-color: white;
-        opacity: .9;
-    }
-
-
-
-
-    
-    .contactanos-footer{
-        height: 95vh;
-        width: 100%;
-        background-color: #E8E9AA;
-        text-align: center;
-        padding-top: 7vh;
-    }
-    
-    .contactanos-contenedor-redes{
-        text-align: center;
-    }
-    
-    .contactanos-icono-redes{
-        display: inline-block;
-        width: 210px;
-        margin: 0;
-    }
-    
-    .contactanos-contenedor-copyright{
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-    }
-    
-    .contactanos-copyright{
-        text-align: center;
-    }
-}
+        margin: 15px 0px 15px 0px; }
+        .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda .mas-vendidos__foto {
+          width: 250px;
+          height: 300px;
+          margin: 0px; }
+        .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda .mas-vendidos__nombre {
+          margin-top: 1vh;
+          font-size: 18px; }
+  footer {
+    height: 9vh; }
+    footer .contenedor-redes {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer .contenedor-redes .separador-redes {
+        padding: 50px 20px 50px 20px; }
+        footer .contenedor-redes .separador-redes .icono-redes {
+          height: 140px; }
+        footer .contenedor-redes .separador-redes .nombre-redes {
+          display: none; } }
