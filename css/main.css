@@ -1,9 +1,11 @@
+/*RESET*/
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: 'Playfair Display', serif; }
 
+/*MAIN INICIO*/
 .inicio-contenedor-img {
   text-align: center;
   background-image: url(../img/descuentos.jpg);
@@ -15,13 +17,14 @@
     object-fit: cover; }
 
 .inicio-contenedor-nosotros {
-  text-align: center;
-  width: 100%;
-  background-color: #535500;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 94vh; }
+  width: 100%;
+  height: 94vh;
+  text-align: center;
+  background-color: #535500; }
   .inicio-contenedor-nosotros .inicio-img-nosotros {
     width: 70vh;
     height: 70vh;
@@ -90,6 +93,66 @@
         font-size: 25px;
         padding-bottom: 5vh; }
 
+/*MAIN COLECCION*/
+.brown:hover, .brown:focus {
+  background-color: #4a3000;
+  border: none; }
+
+.brown {
+  background-color: #694500;
+  border: none;
+  transition: .5s; }
+
+.card {
+  transition: .5s;
+  box-shadow: 0px 0px 5px #656565; }
+
+.card:hover {
+  transform: scale(1.02); }
+
+/*MAIN INFORMACION*/
+.bg-info {
+  background-image: url(../img/bg-info.png);
+  width: 100%;
+  padding: 100px; }
+  .bg-info .contenedor-info {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: center; }
+    .bg-info .contenedor-info .titulo-info {
+      margin: 5px;
+      font-size: 35px; }
+    .bg-info .contenedor-info .pregunta {
+      margin: 40px;
+      font-size: 25px; }
+
+/*MAIN CONTACTANOS*/
+.contactanos-color {
+  background-color: #E8E9AA;
+  height: 100vh; }
+  .contactanos-color .contactanos-footer {
+    width: 100%;
+    text-align: center; }
+    .contactanos-color .contactanos-footer .contactanos-contenedor-redes {
+      text-align: center; }
+      .contactanos-color .contactanos-footer .contactanos-contenedor-redes .contactanos-icono-redes {
+        display: inline-block;
+        width: 300px;
+        margin: 0 100px;
+        padding-top: 11%;
+        transition: 0.7s; }
+      .contactanos-color .contactanos-footer .contactanos-contenedor-redes .contactanos-icono-redes:hover {
+        transform: scale(1.1); }
+    .contactanos-color .contactanos-footer .contactanos-contenedor-copyright {
+      position: fixed;
+      bottom: 0px;
+      width: 100%; }
+      .contactanos-color .contactanos-footer .contactanos-contenedor-copyright .contactanos-copyright {
+        text-align: center; }
+
+/*FOOTER*/
 footer {
   width: 100%;
   background-color: white;
@@ -114,7 +177,9 @@ footer {
     footer .contenedor-copyright .copyright {
       text-align: center; }
 
+/*MEDIA QUERIES*/
 @media screen and (max-width: 1300px) {
+  /*MAIN INICIO*/
   .inicio-contenedor-img {
     height: 90vh; }
     .inicio-contenedor-img .inicio-img-descuentos {
@@ -138,14 +203,15 @@ footer {
       background-color: white;
       grid-template-areas: "titulo" "seccion1" "seccion2" "seccion3"; }
       .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__titulo {
-        padding: 2vh 0vh 2vh 0vh;
-        grid-area: titulo;
-        height: 10vh;
-        width: 80%;
-        background-color: white;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 2vh 0vh 2vh 0vh;
+        grid-area: titulo;
+        width: 80%;
+        height: 10vh;
+        background-color: white;
         margin: auto;
         position: relative;
         bottom: 3vh; }
@@ -160,10 +226,42 @@ footer {
         .bacground-mas-vendidos .contenedor-mas-vendidos .mas-vendidos__celda .mas-vendidos__nombre {
           margin-top: 1vh;
           font-size: 18px; }
+  /*MAIN INFORMACION*/
+  .bg-info {
+    padding: 0px 0px; }
+    .bg-info .contenedor-info {
+      background-color: transparent; }
+      .bg-info .contenedor-info .titulo-info {
+        margin: 5px;
+        font-size: 35px;
+        background-color: white;
+        opacity: .9; }
+      .bg-info .contenedor-info .pregunta {
+        background-color: white;
+        opacity: .9; }
+  /*MAIN CONTACTANOS*/
+  .contactanos-footer {
+    height: 95vh;
+    padding-top: 7vh; }
+  .contactanos-icono-redes {
+    width: 210px;
+    margin: 0px 0px; }
+  .contactanos-color {
+    height: 100vh; }
+    .contactanos-color .contactanos-footer {
+      height: 95vh;
+      padding-top: 7vh; }
+      .contactanos-color .contactanos-footer .contactanos-contenedor-redes {
+        text-align: center; }
+        .contactanos-color .contactanos-footer .contactanos-contenedor-redes .contactanos-icono-redes {
+          width: 210px;
+          margin: 0px 0px; }
+  /*FOOTER*/
   footer {
     height: 9vh; }
     footer .contenedor-redes {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center; }
       footer .contenedor-redes .separador-redes {
