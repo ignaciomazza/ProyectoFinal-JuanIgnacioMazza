@@ -174,15 +174,15 @@
     background-color: $contactanos-bg;
     height: 100vh;
     .contactanos-footer{
+        height: 91%;
         width: 100%;
-        text-align: center;
+        @include flex;
         .contactanos-contenedor-redes{
             text-align: center;
             .contactanos-icono-redes{
                 display: inline-block;
                 width: 300px;
                 margin: 0 100px;
-                padding-top: 11%;
                 transition: 0.7s;
             }
             .contactanos-icono-redes:hover{
@@ -236,6 +236,7 @@ footer{
 
 @media screen and (max-width: 1300px) {
 
+
     /*MAIN INICIO*/
 
     .inicio-contenedor-img{
@@ -271,7 +272,7 @@ footer{
                @include flex;
                padding: 2vh 0vh 2vh 0vh;
                grid-area: titulo;
-               @include sizes(80%, 10vh);
+               @include sizes(80%, 8vh);
                background-color: white;
                margin: auto;
                position: relative;
@@ -279,15 +280,15 @@ footer{
             }
             .mas-vendidos__celda{
                 background-color: white;
-                padding: 5% 5% 20% 5%;
-                margin: 15px 0px 15px 0px;
+                padding: 5% 5% 10% 5%;
+                margin: 15px 0px 10px 0px;
                 .mas-vendidos__foto{
-                    @include sizes(250px, 300px);
+                    @include sizes(350px, 400px);
                     margin: 0px;
                 }
                 
                 .mas-vendidos__nombre{
-                    margin-top: 1vh;
+                    margin-top: 3vh;
                     font-size: 18px;
                 }
             }
@@ -315,21 +316,10 @@ footer{
 
     /*MAIN CONTACTANOS*/
 
-    .contactanos-footer{
-        height: 95vh;
-        padding-top: 7vh;
-
-    }
-    .contactanos-icono-redes{
-        width: 210px;
-        margin: 0px 0px;
-    }
-
     .contactanos-color{
         height: 100vh;
         .contactanos-footer{
-            height: 95vh;
-            padding-top: 7vh;
+            height: 93vh;
             .contactanos-contenedor-redes{
                 text-align: center;
                 .contactanos-icono-redes{
@@ -347,6 +337,113 @@ footer{
         height: 9vh;
         .contenedor-redes{
             @include flex;
+            .separador-redes{
+                padding: 50px 20px 50px 20px;
+                .icono-redes{
+                    height: 140px;
+                }
+                .nombre-redes{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 780px){
+    .bacground-mas-vendidos{
+        background-color: white;
+        padding: 1vh 0vh 1vh 0vh;
+        .contenedor-mas-vendidos{
+            width: 80%;
+            background-color: white;
+            grid-template-areas: "titulo"
+                                 "seccion1"
+                                 "seccion2"
+                                 "seccion3";
+            .mas-vendidos__titulo{
+               @include flex;
+               padding: 2vh 0vh 2vh 0vh;
+               grid-area: titulo;
+               @include sizes(80%, 8vh);
+               background-color: white;
+               margin: auto;
+               position: relative;
+               bottom: 3vh;
+            }
+            .mas-vendidos__celda{
+                background-color: white;
+                padding: 5% 5% 10% 5%;
+                margin: 15px 0px 10px 0px;
+                .mas-vendidos__foto{
+                    @include sizes(550px, 600px);
+                    margin: 0px;
+                }
+                
+                .mas-vendidos__nombre{
+                    margin-top: 3vh;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .bacground-mas-vendidos{
+        background-color: white;
+        padding: 1vh 0vh 1vh 0vh;
+        .contenedor-mas-vendidos{
+            width: 80%;
+            background-color: white;
+            grid-template-areas: "titulo"
+                                 "seccion1"
+                                 "seccion2"
+                                 "seccion3";
+            .mas-vendidos__titulo{
+               @include flex;
+               padding: 2vh 0vh 2vh 0vh;
+               grid-area: titulo;
+               @include sizes(80%, 8vh);
+               background-color: white;
+               margin: auto;
+               position: relative;
+               bottom: 3vh;
+            }
+            .mas-vendidos__celda{
+                background-color: white;
+                padding: 5% 5% 10% 5%;
+                margin: 15px 0px 10px 0px;
+                .mas-vendidos__foto{
+                    @include sizes(210px, 260px);
+                    margin: 0px;
+                }
+                
+                .mas-vendidos__nombre{
+                    margin-top: 3vh;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .inicio-contenedor-nosotros{
+        flex-direction: column;
+        height: 70vh;
+        .inicio-img-nosotros{
+            @include sizes(210px, 210px);
+        }
+        .inicio-div-nosotros{
+            @include sizes(210px, 260px);
+            font-size: 15px;
+        }
+    }
+
+    footer{
+        height: 9vh;
+        .contenedor-redes{
+            @include flex;
+            flex-direction: column;
             .separador-redes{
                 padding: 50px 20px 50px 20px;
                 .icono-redes{
